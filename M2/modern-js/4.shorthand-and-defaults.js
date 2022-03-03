@@ -5,17 +5,23 @@ const first = "Nicole";
 const middle = "Aunapu";
 const last = "Mann";
 
+const names = {
+  first,
+  middle, 
+  last,
+};
+
 /**
  * 2. What are some of the benefits of using object shorthand? Are there any limitations? Write a brief response below.
  */
-
+// cannot change value of variable in the object is a limitation and a benefit its 
 /**
  * 3. The function below expects that sometimes name will not be provided. Update the greet() function so that it uses default parameters.
  */
-function greet(name) {
+function greet(names) {
   let result = "";
-  if (name) {
-    result = `Welcome to NASA, ${name}!`;
+  if (names) {
+    result = `Welcome to NASA, ${names}!`;
   } else {
     result = "Welcome to NASA, space cadet!";
   }
